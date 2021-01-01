@@ -17,7 +17,7 @@ body {
 
     width: 100%;
     position: absolute;
-    top: 950%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -37,5 +37,20 @@ body {
         width: 125px;
         height: 40px;
         display: none;
+    }
+}
+
+.menu {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+
+    ul {
+        list-style: none;
+
+        li {
+            margin: 5px 0px;
+            text-align: right;
+        }
     }
 }
