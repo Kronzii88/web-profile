@@ -60,10 +60,20 @@ body {
   font-weight: bolder;
   font-size: 12px;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 
 .menu ul li a:hover {
   border-left: 3px solid black;
   padding-left: 8px;
+}
+
+.menu ul li.active a {
+  border-bottom: 3px solid black;
+}
+
+.menu ul li.active a:hover {
+  border-left: none;
 }
 /*# sourceMappingURL=main.css.map */

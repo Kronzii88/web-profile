@@ -27,6 +27,7 @@ const introOut = () => {
                                         duration: 1000,
                                         complete: () => {
                                             callMenu();
+                                            $(".menu a[href='about-me']").trigger("click");
                                         } 
                                         });
                 }
@@ -37,6 +38,10 @@ const callMenu = () => {
     $(".menu li").velocity("transition.slideLeftIn", {
         stagger: 250, 
        });
+    
+    $(".menu a").click(function() {
+        $(this).parent("li").addClass("active").siblings().removeClass("active");
+    })
 }
 $(document).ready(() =>  {
     introAnimation();

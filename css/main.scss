@@ -58,11 +58,23 @@ body {
                 font-weight: bolder;
                 font-size: 12px;
                 cursor: pointer;
+                text-decoration: none;
+                color: black;
             }
 
             a:hover {
                 border-left: 3px solid black;
                 padding-left: 8px;
+            }
+        }
+
+        li.active {
+            a {
+                border-bottom: 3px solid black;
+            }
+
+            a:hover {
+                border-left: none
             }
         }
     }
