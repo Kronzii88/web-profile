@@ -24,12 +24,20 @@ const introOut = () => {
                                             duration: 1000
                                         });
                     $(".intro").velocity({"top":"95%"},{
-                                        duration: 1000
+                                        duration: 1000,
+                                        complete: () => {
+                                            callMenu();
+                                        } 
                                         });
                 }
             });
 }
 
+const callMenu = () => {
+    $(".menu li").velocity("transition.slideLeftIn", {
+        stagger: 250, 
+       });
+}
 $(document).ready(() =>  {
     introAnimation();
 })

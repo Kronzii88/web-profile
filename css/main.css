@@ -19,14 +19,14 @@ body {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
 }
 
 .intro .text {
   font-family: 'Audiowide', cursive;
   font-size: 72px;
-  height: 2em;
+  height: 2.5em;
 }
 
 .intro .start {
@@ -40,5 +40,30 @@ body {
   cursor: pointer;
 }
 
+.menu {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
 
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  margin: 5px 0px;
+  text-align: right;
+  display: none;
+}
+
+.menu ul li a {
+  font-weight: bolder;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.menu ul li a:hover {
+  border-left: 3px solid black;
+  padding-left: 8px;
+}
 /*# sourceMappingURL=main.css.map */
