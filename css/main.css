@@ -76,4 +76,30 @@ body {
 .menu ul li.active a:hover {
   border-left: none;
 }
+
+.container-content {
+  display: none;
+}
+
+#about-me img {
+  margin: 180px 0px 0px 60px;
+  border: 10px solid burlywood;
+  border-radius: 3px;
+  width: 400px;
+}
+
+#about-me .title {
+  position: absolute;
+  top: 15px;
+  left: 520px;
+  font-size: 72px;
+  text-transform: uppercase;
+}
+
+#about-me div {
+  width: 650px;
+  position: absolute;
+  top: 260px;
+  left: 530px;
+}
 /*# sourceMappingURL=main.css.map */
