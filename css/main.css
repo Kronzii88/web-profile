@@ -19,7 +19,7 @@ body {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -81,14 +81,14 @@ body {
   display: none;
 }
 
-#about-me img {
+#about_me img {
   margin: 180px 0px 0px 60px;
   border: 10px solid burlywood;
   border-radius: 3px;
   width: 400px;
 }
 
-#about-me .title {
+#about_me .title {
   position: absolute;
   top: 15px;
   left: 520px;
@@ -96,10 +96,11 @@ body {
   text-transform: uppercase;
 }
 
-#about-me div {
+#about_me div {
   width: 650px;
   position: absolute;
   top: 260px;
   left: 530px;
 }
+
 /*# sourceMappingURL=main.css.map */

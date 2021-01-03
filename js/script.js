@@ -27,7 +27,7 @@ const introOut = () => {
                                         duration: 1000,
                                         complete: () => {
                                             callMenu();
-                                            $(".menu a[href='about-me']").trigger("click");
+                                            $(".menu a[href='about_me']").trigger("click");
                                         } 
                                         });
                 }
@@ -39,10 +39,25 @@ const callMenu = () => {
         stagger: 250, 
        });
     
-    $(".menu a").click(function() {
+    $(".menu a").click(function(e) {
+        e.preventDefault(); 
         $(this).parent("li").addClass("active").siblings().removeClass("active");
+
+        //memanggil fungsi sesuai dengan nilai href
+        const hrefString = $(this).attr("href");
+        // console.log(hrefString);
+        $("#" + hrefString).show();
+
+        window[hrefString]();
     })
 }
+
+function about_me(){
+    $("#about_me img").velocity("transition.flipYIn", {duration: 1500});
+    $("#about_me .title").velocity("transition.slideUpIn", {duration: 1500});
+    $("#about_me div").velocity("transition.slideDownIn", {duration: 1500});
+}
+
 $(document).ready(() =>  {
     introAnimation();
 })
