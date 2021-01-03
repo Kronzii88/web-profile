@@ -19,7 +19,7 @@ body {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -103,4 +103,38 @@ body {
   left: 530px;
 }
 
+#timeline {
+  margin-left: 70px;
+}
+
+#timeline .member {
+  float: left;
+  margin: 0px 10px;
+  background: white;
+  padding: 5px 5px 15px 5px;
+  border-radius: 3px;
+}
+
+#timeline .member img {
+  width: 230px;
+}
+
+#timeline .member h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 5px 0px 2px 0px;
+}
+
+#timeline .member span {
+  font-size: 12px;
+  font-style: italic;
+}
+
+#timeline .top240 {
+  margin-top: 240px;
+}
+
+#timeline .top170 {
+  margin-top: 170px;
+}
 /*# sourceMappingURL=main.css.map */

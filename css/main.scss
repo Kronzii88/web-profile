@@ -108,3 +108,38 @@ body {
         left: 530px;
     }
 }
+
+#timeline {
+    margin-left: 70px;
+
+    .member {
+        float: left;
+        margin: 0px 10px;
+        background: white;
+        padding: 5px 5px 15px 5px;
+        border-radius: 3px;
+
+        img {
+            width: 230px;
+        }
+
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin: 5px 0px 2px 0px;
+        }
+
+        span {
+            font-size: 12px;
+            font-style: italic;
+        }
+    }
+
+    .top240 {
+        margin-top: 240px;
+    }
+
+    .top170 {
+        margin-top: 170px;
+    }
+}
